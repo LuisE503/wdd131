@@ -1,47 +1,55 @@
-/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --primary-color: #2E2E2E;
+    --secondary-color: #4CAF50;
+    --accent1-color: #388E3C;
+    --accent2-color: #FFD700;
+    --accent3-color: #FFFFFF;
+    --heading-font: 'Poppins', sans-serif;
+    --paragraph-font: 'Poppins', sans-serif;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #EFEFEF; /* Color de fondo similar al de la imagen */
+    font-family: var(--paragraph-font);
+    background-color: #EFEFEF;
     margin: 0;
     padding: 0;
     font-size: 24px;
 }
 
-/* Header Styles */
 header {
     display: grid;
     grid-template-columns: auto;
-    background-color: #FFFFFF; /* Fondo blanco */
+    background-color: var(--accent3-color);
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     padding: 1em;
-    color: #2E2E2E; /* Color de texto similar al de la imagen */
+    color: var(--primary-color);
 }
 
 nav {
-    background-color: #4CAF50; /* Color verde similar al de la imagen */
+    background-color: var(--secondary-color);
     padding: 20px;
     display: flex;
     justify-content: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
-    color: #FFFFFF; /* Texto blanco */
+    color: var(--accent3-color);
     text-decoration: none;
     margin: 0 15px;
 }
 
 nav a:hover {
-    color: #FFD700; /* Color dorado al pasar el mouse */
+    color: var(--accent2-color);
     text-decoration: underline;
     transform: scale(1.1);
 }
 
-/* Main Content Styles */
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -50,17 +58,17 @@ main {
 }
 
 .card {
-    background-color: #FFFFFF; /* Fondo blanco */
+    background-color: var(--accent3-color);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card h2 {
-    background-color: #4CAF50; /* Fondo verde */
+    background-color: var(--secondary-color);
     padding: 10px;
-    color: #FFFFFF; /* Texto blanco */
-    border-bottom: 3px solid #388E3C; /* Borde inferior verde oscuro */
+    color: var(--accent3-color);
+    border-bottom: 3px solid var(--accent1-color);
 }
 
 .card img {
@@ -68,7 +76,6 @@ main {
     height: auto;
 }
 
-/* Story Section */
 .story {
     display: flex;
     justify-content: space-between;
@@ -76,17 +83,16 @@ main {
 
 .story p {
     width: 60%;
-    color: #2E2E2E; /* Color de texto similar al de la imagen */
+    color: var(--primary-color);
 }
 
 .story img {
     width: 35%;
 }
 
-/* Footer Styles */
 footer {
-    background-color: #2E2E2E; /* Color de fondo oscuro */
-    color: #FFFFFF; /* Texto blanco */
+    background-color: var(--primary-color);
+    color: var(--accent3-color);
     text-align: center;
     padding: 20px;
     grid-column: 1 / 3;
