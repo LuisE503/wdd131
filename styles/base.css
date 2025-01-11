@@ -1,67 +1,97 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    background-color: #EFEFEF; /* Color de fondo similar al de la imagen */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-size: 24px;
 }
 
-/* Layout Styles */
-header, main, footer {
-    padding: 20px;
-    margin: 0 auto;
-}
-
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Navigation Styles */
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #0073e6;
-}
-
-/* Card Styles */
-.card {
+/* Header Styles */
+header {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    background-color: #f9f9f9;
+    grid-template-columns: auto;
+    background-color: #FFFFFF; /* Fondo blanco */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+header h1 {
+    padding: 1em;
+    color: #2E2E2E; /* Color de texto similar al de la imagen */
+}
+
+nav {
+    background-color: #4CAF50; /* Color verde similar al de la imagen */
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+nav a {
+    color: #FFFFFF; /* Texto blanco */
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #FFD700; /* Color dorado al pasar el mouse */
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+/* Main Content Styles */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #FFFFFF; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.card h2 {
+    background-color: #4CAF50; /* Fondo verde */
+    padding: 10px;
+    color: #FFFFFF; /* Texto blanco */
+    border-bottom: 3px solid #388E3C; /* Borde inferior verde oscuro */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Story Section */
+.story {
+    display: flex;
+    justify-content: space-between;
+}
+
+.story p {
+    width: 60%;
+    color: #2E2E2E; /* Color de texto similar al de la imagen */
+}
+
+.story img {
+    width: 35%;
 }
 
 /* Footer Styles */
-footer p {
-    margin: 5px 0;
+footer {
+    background-color: #2E2E2E; /* Color de fondo oscuro */
+    color: #FFFFFF; /* Texto blanco */
+    text-align: center;
+    padding: 20px;
+    grid-column: 1 / 3;
 }
 
-/* Responsive Design */
-@media (min-width: 768px) {
-    .card {
-        grid-template-columns: 1fr 1fr;
-    }
+footer p {
+    margin: 0;
 }
