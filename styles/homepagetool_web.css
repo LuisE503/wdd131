@@ -1,0 +1,65 @@
+/* homepagetool_web.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h1 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#current-time {
+    color: #666;
+    font-size: 12px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
