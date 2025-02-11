@@ -1,7 +1,7 @@
-/* homepagetool_web-large.css */
 @media (min-width: 1200px) {
     header {
         padding: 20px 0;
+        background-color: #00bfff; /* Fondo azul celeste */
     }
 
     nav ul li {
@@ -13,61 +13,15 @@
         height: 30px;
     }
 
-    main {
-        padding: 40px;
+    nav ul li a {
+        color: #000; /* Color negro para los íconos */
+        background-color: #e0e0e0; /* Fondo gris claro para los elementos de la navegación */
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
     }
 
-    footer {
-        padding: 20px 0;
-    }
-
-    #current-time {
-        font-size: 14px;
-        bottom: 20px;
-        right: 20px;
-    }
-
-    /* Estilos para pantallas grandes */
-    .tool {
-        width: 250px;
-        height: 200px;
-        margin: 30px;
-    }
-
-    .tool-name {
-        padding: 15px 0;
-    }
-
-    /* Estilos para las herramientas */
-    .tool {
-        position: relative;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s ease-in-out;
-        text-decoration: none;
-        color: inherit;
-    }
-
-    .tool:hover {
-        transform: translateY(-10px);
-    }
-
-    .tool:active {
-        transform: scale(0.95);
-    }
-
-    .tool img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .tool-name {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        padding: 10px 0;
-        background-color: rgba(0, 0, 0, 0.7);
-        color: #fff;
-        text-align: center;
+    nav ul li a:hover {
+        background-color: #d1d1d1; /* Fondo gris más oscuro al pasar el cursor */
     }
 }
