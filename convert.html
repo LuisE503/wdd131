@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="styles/homepagetool_web.css"> <!-- Enlace al archivo CSS estándar -->
+    <link rel="stylesheet" href="styles/homepagetool_web-large.css" media="screen and (min-width: 1200px)"> <!-- Enlace al archivo CSS para pantallas grandes -->
+    <link rel="stylesheet" href="styles/conversor.css"> <!-- Enlace al archivo CSS específico para el conversor de unidades -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="images/home.svg" alt="Home Icon">Inicio</a></li>
+                <li><a href="calculadora.html"><img src="images/calculator.svg" alt="Calculadora Icon">Calculadora</a></li>
+                <li><a href="conversor.html"><img src="images/kg.svg" alt="Conversor Icon">Conversor de Unidades</a></li>
+                <li><a href="todo.html"><img src="images/to-do-list.svg" alt="To-Do List Icon">To-Do List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Conversor de Unidades</h1>
+        <div class="converter">
+            <div class="converter-inputs">
+                <input type="number" id="input-value" placeholder="Valor">
+                <select id="input-unit">
+                    <option value="kg">Kilogramos (kg)</option>
+                    <option value="lb">Libras (lb)</option>
+                </select>
+            </div>
+            <div class="converter-icon">
+                ⇆
+            </div>
+            <div class="converter-outputs">
+                <input type="text" id="output-value" placeholder="Resultado" readonly>
+                <select id="output-unit">
+                    <option value="kg">Kilogramos (kg)</option>
+                    <option value="lb">Libras (lb)</option>
+                </select>
+            </div>
+            <button class="converter-button" onclick="convert()">Convertir</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Proyecto Web. Todos los derechos reservados.</p>
+        <a href="atribuciones.html">Atribuciones</a>
+    </footer>
+
+    <script src="scripts/conversor.js"></script> <!-- Enlace al archivo JS específico para el conversor de unidades -->
+</body>
+</html>
