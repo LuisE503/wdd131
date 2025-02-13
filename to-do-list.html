@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tareas</title>
-    <link rel="stylesheet" href="styles/homepagetool_web.css"> <!-- Enlace al archivo CSS estándar -->
-    <link rel="stylesheet" href="styles/homepagetool_web-large.css" media="screen and (min-width: 1200px)"> <!-- Enlace al archivo CSS para pantallas grandes -->
-    <link rel="stylesheet" href="styles/to-do-list.css"> <!-- Enlace al archivo CSS específico para la lista de tareas -->
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles/homepagetool_web.css">
+    <link rel="stylesheet" href="styles/homepagetool_web-large.css" media="screen and (min-width: 1200px)">
+    <link rel="stylesheet" href="styles/to-do-list.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html"><img src="images/home.svg" alt="Home Icon">Inicio</a></li>
-                <li><a href="calculadora.html"><img src="images/calculator.svg" alt="Calculadora Icon">Calculadora</a></li>
-                <li><a href="conversor.html"><img src="images/kg.svg" alt="Conversor Icon">Conversor de Unidades</a></li>
+                <li><a href="index.html"><img src="images/home.svg" alt="Home Icon">Home</a></li>
+                <li><a href="calculator.html"><img src="images/calculator.svg" alt="Calculator Icon">Calculator</a></li>
+                <li><a href="converter.html"><img src="images/kg.svg" alt="Converter Icon">Unit Converter</a></li>
                 <li><a href="todo.html"><img src="images/to-do-list.svg" alt="To-Do List Icon">To-Do List</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Lista de Tareas</h1>
+        <h1>To-Do List</h1>
         <div class="todo-container">
-            <input type="text" id="new-task" class="todo-input" placeholder="Nueva tarea...">
-            <button id="add-task" class="todo-button">Añadir</button>
+            <input type="text" id="new-task" class="todo-input" placeholder="New task...">
+            <button id="add-task" class="todo-button">Add</button>
             <ul id="task-list" class="todo-list"></ul>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Mi Proyecto Web. Todos los derechos reservados.</p>
-        <a href="atribuciones.html">Atribuciones</a>
+        <p>&copy; 2025 My Web Project. All rights reserved.</p>
+        <a href="attributions.html">Attributions</a>
     </footer>
 
-    <script src="scripts/to-do-list.js"></script> <!-- Enlace al archivo JS específico para la lista de tareas -->
+    <script src="scripts/to-do-list.js"></script>
 </body>
 </html>
