@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #00bfff; /* Fondo azul celeste */
+    background-color: #00bfff;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -24,18 +24,18 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #000; /* Color negro para los íconos */
+    color: #000;
     text-decoration: none;
     display: flex;
     align-items: center;
-    background-color: #e0e0e0; /* Fondo gris claro para los elementos de la navegación */
+    background-color: #e0e0e0;
     padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #d1d1d1; /* Fondo gris más oscuro al pasar el cursor */
+    background-color: #d1d1d1;
 }
 
 nav ul li a img {
@@ -71,7 +71,6 @@ footer {
     right: 10px;
 }
 
-/* Estilos para las herramientas */
 .tools {
     display: flex;
     flex-wrap: wrap;
