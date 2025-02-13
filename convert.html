@@ -1,54 +1,54 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Unidades</title>
-    <link rel="stylesheet" href="styles/homepagetool_web.css"> <!-- Enlace al archivo CSS estándar -->
-    <link rel="stylesheet" href="styles/homepagetool_web-large.css" media="screen and (min-width: 1200px)"> <!-- Enlace al archivo CSS para pantallas grandes -->
-    <link rel="stylesheet" href="styles/convert.css"> <!-- Enlace al archivo CSS específico para el conversor de unidades -->
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles/homepagetool_web.css">
+    <link rel="stylesheet" href="styles/homepagetool_web-large.css" media="screen and (min-width: 1200px)">
+    <link rel="stylesheet" href="styles/convert.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html"><img src="images/home.svg" alt="Home Icon">Inicio</a></li>
-                <li><a href="calculadora.html"><img src="images/calculator.svg" alt="Calculadora Icon">Calculadora</a></li>
-                <li><a href="conversor.html"><img src="images/kg.svg" alt="Conversor Icon">Conversor de Unidades</a></li>
+                <li><a href="index.html"><img src="images/home.svg" alt="Home Icon">Home</a></li>
+                <li><a href="calculator.html"><img src="images/calculator.svg" alt="Calculator Icon">Calculator</a></li>
+                <li><a href="converter.html"><img src="images/kg.svg" alt="Converter Icon">Unit Converter</a></li>
                 <li><a href="todo.html"><img src="images/to-do-list.svg" alt="To-Do List Icon">To-Do List</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Conversor de Unidades</h1>
+        <h1>Unit Converter</h1>
         <div class="converter">
-            <label for="input-value">Valor:</label>
+            <label for="input-value">Value:</label>
             <input type="number" id="input-value" class="converter-input">
             
-            <label for="input-unit">De:</label>
+            <label for="input-unit">From:</label>
             <select id="input-unit" class="converter-select">
-                <option value="kg">Kilogramos</option>
-                <option value="lb">Libras</option>
+                <option value="kg">Kilograms</option>
+                <option value="lb">Pounds</option>
             </select>
             
-            <label for="output-unit">A:</label>
+            <label for="output-unit">To:</label>
             <select id="output-unit" class="converter-select">
-                <option value="kg">Kilogramos</option>
-                <option value="lb">Libras</option>
+                <option value="kg">Kilograms</option>
+                <option value="lb">Pounds</option>
             </select>
             
-            <button id="convert-button" class="converter-button">Convertir</button>
+            <button id="convert-button" class="converter-button">Convert</button>
             
-            <div id="output-value" class="converter-output">Resultado: 0</div>
+            <div id="output-value" class="converter-output">Result: 0</div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Mi Proyecto Web. Todos los derechos reservados.</p>
-        <a href="atribuciones.html">Atribuciones</a>
+        <p>&copy; 2025 My Web Project. All rights reserved.</p>
+        <a href="attributions.html">Attributions</a>
     </footer>
 
-    <script src="scripts/convert.js"></script> <!-- Enlace al archivo JS específico para el conversor de unidades -->
+    <script src="scripts/convert.js"></script>
 </body>
 </html>
