@@ -2,7 +2,7 @@
 function updateCopyrightYear() {
     const currentYear = new Date().getFullYear();
     const copyrightElement = document.querySelector('footer p');
-    copyrightElement.textContent = `© ${currentYear} Mi Proyecto Web. Todos los derechos reservados.`;
+    copyrightElement.textContent = `© ${currentYear} My Web Project. All rights reserved.`;
 }
 
 // Función para mostrar la hora actual
